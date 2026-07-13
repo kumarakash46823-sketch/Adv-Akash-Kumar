@@ -549,87 +549,56 @@ export default function App() {
 
       {/* 4. ABOUT ME SECTION */}
       <section id="about" className="py-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col space-y-8">
             
-            {/* Left Column: Portrait photo */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-start">
-              <div className="relative">
-                {/* Gold Frame accent */}
-                <div className="absolute -inset-4 rounded-lg border-2 border-gold-accent/40 -z-10 transform translate-x-3 translate-y-3" />
-                
-                {/* Image tag with referrerPolicy */}
-                <img
-                  id="adv-profile-photo"
-                  src={profilePhoto}
-                  alt="Advocate Akash Kumar portrait"
-                  className="w-full max-w-[360px] h-auto rounded-md shadow-2xl object-cover object-center border-4 border-white aspect-[3/4]"
-                  referrerPolicy="no-referrer"
-                />
-                
-                {/* Embedded dynamic Floating Badge */}
-                <div className="absolute -bottom-6 -right-6 bg-navy-dark text-white p-4 rounded-md shadow-xl border border-gold-accent/30 max-w-[200px]">
-                  <div className="flex items-center space-x-2 mb-1">
-                    <Gavel className="h-4 w-4 text-gold-accent" />
-                    <span className="text-xs font-mono font-bold tracking-wider uppercase text-gold-accent">Delhi Courts</span>
-                  </div>
-                  <p className="text-[10px] text-slate-300 leading-tight">
-                    Active practitioner before Delhi High Court and various District Courts.
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2 text-center">
+              <span className="text-xs font-poppins font-bold uppercase tracking-widest text-gold-accent">
+                Professional Profile
+              </span>
+              <h2 id="about-title" className="text-3xl md:text-4xl font-serif font-bold text-navy-dark tracking-tight">
+                About Advocate
+              </h2>
+              <div className="h-1 w-20 bg-gold-accent mx-auto" />
             </div>
 
-            {/* Right Column: Bio details */}
-            <div className="lg:col-span-7 flex flex-col space-y-6">
-              <div className="space-y-2">
-                <span className="text-xs font-poppins font-bold uppercase tracking-widest text-gold-accent">
-                  Professional Profile
-                </span>
-                <h2 id="about-title" className="text-3xl md:text-4xl font-serif font-bold text-navy-dark tracking-tight">
-                  About Advocate
-                </h2>
-                <div className="h-1 w-20 bg-gold-accent" />
-              </div>
+            <div id="about-content" className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base text-center max-w-3xl mx-auto">
+              <p className="font-medium text-slate-800 text-lg">
+                Adv. Akash Kumar is a practicing Advocate representing clients before the prestigious High Court of Delhi and various District Courts.
+              </p>
+              <p>
+                He is deeply committed to delivering professional legal services with honesty, transparency, and dedication while ensuring every client's legal rights are effectively protected at every step of litigation.
+              </p>
+              <p>
+                His judicial approach focuses on thorough legal research, practical advice, strategic litigation preparation, and timely legal solutions. He believes that a great legal representative must be a fierce advocate in court and a steady, objective advisor outside of it.
+              </p>
+            </div>
 
-              <div id="about-content" className="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
-                <p className="font-medium text-slate-800">
-                  Adv. Akash Kumar is a practicing Advocate representing clients before the prestigious High Court of Delhi and various District Courts.
-                </p>
-                <p>
-                  He is deeply committed to delivering professional legal services with honesty, transparency, and dedication while ensuring every client's legal rights are effectively protected at every step of litigation.
-                </p>
-                <p>
-                  His judicial approach focuses on thorough legal research, practical advice, strategic litigation preparation, and timely legal solutions. He believes that a great legal representative must be a fierce advocate in court and a steady, objective advisor outside of it.
-                </p>
+            {/* Pillars list */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-6 w-full">
+              <div className="flex flex-col items-center p-5 bg-slate-50/60 rounded-md border border-slate-100 text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+                <div className="p-3 bg-navy-dark/5 rounded-full text-gold-accent mb-3">
+                  <Scale className="h-6 w-6" />
+                </div>
+                <span className="text-sm font-poppins font-semibold text-slate-800 leading-snug">High Court of Delhi</span>
               </div>
-
-              {/* Pillars list */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-navy-dark/5 rounded-full text-gold-accent">
-                    <Scale className="h-5 w-5" />
-                  </div>
-                  <span className="text-sm font-poppins font-medium text-slate-800">High Court of Delhi</span>
+              <div className="flex flex-col items-center p-5 bg-slate-50/60 rounded-md border border-slate-100 text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+                <div className="p-3 bg-navy-dark/5 rounded-full text-gold-accent mb-3">
+                  <Shield className="h-6 w-6" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-navy-dark/5 rounded-full text-gold-accent">
-                    <Shield className="h-5 w-5" />
-                  </div>
-                  <span className="text-sm font-poppins font-medium text-slate-800">District Courts Representative</span>
+                <span className="text-sm font-poppins font-semibold text-slate-800 leading-snug">District Courts</span>
+              </div>
+              <div className="flex flex-col items-center p-5 bg-slate-50/60 rounded-md border border-slate-100 text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+                <div className="p-3 bg-navy-dark/5 rounded-full text-gold-accent mb-3">
+                  <FileText className="h-6 w-6" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-navy-dark/5 rounded-full text-gold-accent">
-                    <FileText className="h-5 w-5" />
-                  </div>
-                  <span className="text-sm font-poppins font-medium text-slate-800">Thorough Legal Research</span>
+                <span className="text-sm font-poppins font-semibold text-slate-800 leading-snug">Thorough Research</span>
+              </div>
+              <div className="flex flex-col items-center p-5 bg-slate-50/60 rounded-md border border-slate-100 text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+                <div className="p-3 bg-navy-dark/5 rounded-full text-gold-accent mb-3">
+                  <Users className="h-6 w-6" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-navy-dark/5 rounded-full text-gold-accent">
-                    <Users className="h-5 w-5" />
-                  </div>
-                  <span className="text-sm font-poppins font-medium text-slate-800">Client-First Transparency</span>
-                </div>
+                <span className="text-sm font-poppins font-semibold text-slate-800 leading-snug">Client-First Transparency</span>
               </div>
             </div>
 
