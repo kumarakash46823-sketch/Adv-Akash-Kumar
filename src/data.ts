@@ -153,7 +153,7 @@ export const contactDetails = {
   role: 'Advocate | High Court of Delhi & District Courts',
   officeAddress: 'B-121, Pandav Nagar, New Delhi – 110092',
   phone: '+91 9667336929',
-  email: 'kumarakash46823@gmail.com',
+  email: 'advocatekumarakash@gmail.com',
   whatsappNumber: '+919667336929',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/in/adv-akash-kumar-02b32b1aa/',

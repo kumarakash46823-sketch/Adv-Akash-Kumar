@@ -922,7 +922,7 @@ export default function App() {
                   <input
                     type="email"
                     id="email"
-                    placeholder="e.g. kumarakash46823@gmail.com"
+                    placeholder="e.g. advocatekumarakash@gmail.com"
                     value={formInput.email}
                     onChange={(e) => setFormInput({ ...formInput, email: e.target.value })}
                     className={`w-full px-4 py-3 bg-white border rounded-sm text-sm focus:outline-none focus:border-gold-accent focus:ring-1 focus:ring-gold-accent transition-colors ${
