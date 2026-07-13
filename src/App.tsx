@@ -54,7 +54,7 @@ const iconMap: Record<string, React.ComponentType<any>> = {
 
 // Profile Photo and Hero Background Image paths
 // @ts-ignore
-import profilePhoto from './assets/images/adv-akash-kumar.jpg';
+import profilePhoto from './assets/images/advocate-akash-kumar-profile.jpg';
 // @ts-ignore
 import heroBg from './assets/images/hero_bg_1783928882063.jpg';
 
@@ -550,8 +550,34 @@ export default function App() {
       {/* 4. ABOUT ME SECTION */}
       <section id="about" className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-12">
             
+            {/* Elegant Professional Profile Image Container */}
+            <div className="flex justify-center">
+              <div className="relative group max-w-[280px] sm:max-w-[320px] w-full">
+                {/* Decorative background framing */}
+                <div className="absolute -inset-3 rounded-lg border border-gold-accent/40 -z-10 transform translate-x-2.5 translate-y-2.5 transition-transform duration-300 group-hover:translate-x-3 group-hover:translate-y-3" />
+                <div className="absolute -inset-3 rounded-lg border border-navy-dark/15 -z-20 transform -translate-x-2.5 -translate-y-2.5 transition-transform duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3" />
+                
+                {/* Premium White-Border Shadow Frame */}
+                <div className="overflow-hidden rounded-md border-4 border-white shadow-2xl bg-slate-50 aspect-[3/4]">
+                  <img
+                    id="adv-profile-photo"
+                    src={profilePhoto}
+                    alt="Advocate Akash Kumar Portrait"
+                    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+
+                {/* Elegant Minimalist Floating Badge */}
+                <div className="absolute -bottom-4 -right-4 bg-navy-dark text-white py-2 px-3.5 rounded-sm shadow-xl border border-gold-accent/30 flex items-center space-x-2">
+                  <div className="h-2 w-2 rounded-full bg-gold-accent animate-pulse" />
+                  <span className="text-[10px] font-mono font-semibold tracking-wider uppercase text-gold-accent">Delhi Courts Practitioner</span>
+                </div>
+              </div>
+            </div>
+
             <div className="space-y-2 text-center">
               <span className="text-xs font-poppins font-bold uppercase tracking-widest text-gold-accent">
                 Professional Profile
