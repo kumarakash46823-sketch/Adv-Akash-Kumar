@@ -54,7 +54,7 @@ const iconMap: Record<string, React.ComponentType<any>> = {
 
 // Profile Photo and Hero Background Image paths
 // @ts-ignore
-import profilePhoto from './assets/images/adv-akash-kumar.png';
+import profilePhoto from './assets/images/adv-akash-kumar.jpg';
 // @ts-ignore
 import heroBg from './assets/images/hero_bg_1783928882063.jpg';
 
